@@ -1,0 +1,29 @@
+.books-container
+{
+   
+    margin: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+.div-Container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+.main-div
+{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn
+{
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+.btn:hover
+{
+    background-color:darkslateblue;
+}
