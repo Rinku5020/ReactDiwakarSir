@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+/* Footer Css */
+#footer
+{
+  border: 1px solid black;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #15191b;
+  font-family:serif;
+  color: aliceblue;
+}
+.HeadTag
+{
+  display: flex;
+  text-align: center;
+  margin:10px 10px ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.Text1
+{
+  margin-top: 60px;
+}
+.img1 img
+{
+  border-radius: 50%;
+}
+.HeadTag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .HeadTag {
+    flex-direction: row;
+  }
+  
+  .Text1 {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .img1 {
+    flex: 1;
+  }
+}
