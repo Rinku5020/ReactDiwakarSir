@@ -7,17 +7,14 @@ function Product() {
     const [data, setData] = useState([])
     useEffect(() => {
         function FetchApi() {
-            fetch("http://localhost:8080/data")
+            fetch("http://localhost:8081/data")
                 .then((res) => res.json())
                 .then((data) => setData(data))
                 .catch((err) => console.log(err))
         }
         FetchApi();
-    }, [])
-
+    }, [data])
     
-    console.log(data)
-
     return (
         <div>
         <h1 style={{textAlign:"center"}}>Cart Project Add Update and Delete</h1>
