@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Contextapi, ContextapiProvider } from './Contextapi';
+import { ThemeChangeProvider } from './ThemeChnange';
+import {AuthContextProvider} from './AuthContext'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <AuthContextProvider>
+  <ThemeChangeProvider>
     <App />
-  </React.StrictMode>
+  </ThemeChangeProvider>
+  </AuthContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
