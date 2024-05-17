@@ -1,5 +1,6 @@
-import React from 'react'
-import {Link, NavLink} from 'react-router-dom'
+import React from 'react';
+import {Link, NavLink} from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 function Navbar() {
 
     const link=[
@@ -15,10 +16,14 @@ function Navbar() {
           path:'/service',
           title:"Service"
         },
+        {
+          path:'/product',
+          title:'Product'
+        },
       ]
 
   return (
-    <div style={{display:"flex",justifyContent:"space-around"}}>
+    <div style={{display:"flex",justifyContent:"space-around", margin:"15px"}}>
 
 
     {link.map((el,i)=>(
@@ -29,16 +34,16 @@ function Navbar() {
 
         
         key={el.path} to={el.path}> 
-        {el.title}
-           
+        {el.title}    
         </NavLink>
     ))}
+    <Link to={"/login"}><Button variant="outline-primary">Login</Button></Link>
+    
 
-
-
+{/* 
       <Link to={'/'} >Home</Link>
       <Link to={'/about'} >About</Link>
-      <Link to={'/service'} >Service</Link>
+      <Link to={'/service'} >Service</Link> */}
     </div>
   )
 }

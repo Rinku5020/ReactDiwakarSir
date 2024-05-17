@@ -1,0 +1,41 @@
+{
+    "Productdata":[
+        {
+          "id": 1,
+          "name": "Clothes",
+          "image": "https://static01.nyt.com/images/2022/10/07/fashion/07openthread03/07openthread03-jumbo.jpg?quality=75&auto=webp",
+          "price": "500"
+        },
+        {
+          "id": 2,
+          "name": "Electronics",
+          "image": "https://i.imgur.com/ZANVnHE.jpeg",
+          "price": "2999"
+          
+        },
+        {
+          "id": 3,
+          "name": "Furniture",
+          "image": "https://i.imgur.com/Qphac99.jpeg",
+          "price": "5000"
+        },
+        {
+          "id": 4,
+          "name": "Shoes",
+          "image": "https://i.imgur.com/qNOjJje.jpeg",
+          "price": "80000"
+        },
+        {
+          "id": 5,
+          "name": "Miscellaneous",
+          "image": "https://i.imgur.com/BG8J0Fj.jpg",
+          "price": "15000"
+        },
+        {
+            "id": 6,
+            "name": "Miscellaneous",
+            "image": "https://i.imgur.com/BG8J0Fj.jpg",
+            "price": "15000"
+          }
+      ]
+}
