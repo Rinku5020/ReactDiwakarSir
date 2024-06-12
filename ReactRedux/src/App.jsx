@@ -5,17 +5,17 @@ import { store } from './Redux/Store'
 
 function App() {
 
-// const {dispatch, getState, subscribe} = store
+// const {dispatch, getState, subscribe} = store //4
 
-const dispatch = useDispatch()
-const getCounter=useSelector(a=>a.counter)
+const dispatch = useDispatch() // 9
+const getCounter=useSelector(a=>a.counter) // 10
 console.log(getCounter)
 
   return (
     <>
-      <h1>Counter : {getCounter}</h1>
-      <button onClick={ ()=>{dispatch(AddToCounter())}} >+</button>
-      <button onClick={()=>{dispatch(SubToCounter())}} >-</button>
+      <h1>Counter : {getCounter}</h1>  {/*11*/}
+      <button onClick={ ()=>{dispatch(AddToCounter())}} >+</button> {/*5*/}
+      <button onClick={()=>{dispatch(SubToCounter())}} >-</button>  {/*6*/}
     </>
   )
 }
